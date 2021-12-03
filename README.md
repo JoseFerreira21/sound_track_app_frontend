@@ -12,7 +12,7 @@ ionic serve -l
 
 #upload in localhost:8082
 
-```bash
+
 # development run in server web
 ionic serve 
 
