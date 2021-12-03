@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" #email required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" #password required></ion-input>
+    </ion-item>
+    <ion-row >
+      <ion-col>
+        <ion-button type="submit" (click)="onLogin(email, password)" expand="block" color = "tertiary">Login</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row >
+      <ion-col>
+        <p class="ion-text-end">
+          <a routerLink="/forgot-password">Olvido la contraseña? </a>
+        </p>
+      </ion-col>
+    </ion-row>
+    <span class="center-span"> o </span>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="danger" (click)="onLoginGoogle()" expand="block"
+          >Login con Google
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+  <ion-row>
+    <ion-col>
+      <p class="ion-text-end">
+        <a routerLink="/register">Crear una cuenta </a>
+      </p>
+    </ion-col>
+  </ion-row>
+  
+  <!--
+  <div class="ae-container-fluid">
+    <div class="ae-grid ae-grid--collapse ">
+        <div class="ae-grid__item item-lg-8 item-sm--center au-xs-ta-center au-lg-ta-left">
+            <h2 class="rk-portfolio-inner-title "> </h2>
+        </div>
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right rk-portfolio-details">
+            <a href="/https://www.facebook.com/Soundtrackpy" class="rk-social-btn ">
+                <svg>
+                    <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/soundtrack_py/" class="rk-social-btn ">
+                <svg>
+                <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
+                </svg>
+            </a>
+
+            <a href="+595973418489" >
+                Telefono
+            </a>
+        </div>
+    </div>
+</div> -->
+
+  <ion-card-content>
+    <img src="../../assets/img/logo-soundtrack.png" height="120px" width="120px" style="margin: 0 auto; display: block">
+    <ion-card-title style="font-size:20px" > Servicios de Entretenimiento </ion-card-title>
+   </ion-card-content>
+   
+
+   <!-- <img src="../../assets/img/logo-soundtrack.jpg" height="50px" width="100px" style="margin: 0 auto; display: block">-->
+</ion-content>

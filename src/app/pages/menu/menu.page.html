@@ -1,0 +1,68 @@
+ <ion-header> 
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons> 
+    <ion-title>Servicios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="../../assets/img/logo-soundtrack.png" height="50px" width="100px" style="margin: 0 auto; display: block">
+  <hr>
+       <div class="ae-grid ae-grid--collapse ">
+          <div class="ae-grid__item item-lg-8 item-sm--center au-xs-ta-center au-lg-ta-left">
+              <h2 class="rk-portfolio-inner-title "> </h2>
+          </div>
+          <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right rk-portfolio-details">
+              <a href="https://{{empresa.facebook}}" class="rk-social-btn ">
+                  <svg>
+                      <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
+                  </svg>
+              </a>
+              <a href="https://{{empresa.Instagram}}" class="rk-social-btn ">
+                  <svg>
+                  <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
+                  </svg>
+              </a>
+  
+              <a href="{{empresa.telefono}}" >
+                  Telefono
+              </a>
+          </div>
+      </div>
+    
+  <hr>
+
+  <ion-card-content>
+  <ion-card-subtitle size = "large" color = "black">Solicita vos también tu servicio preferido! </ion-card-subtitle>
+  </ion-card-content>
+  
+  <!--<div class = "bar bar-sobheader item-input-insert bar light" >
+    <label class = "item-input-wrapper">
+      <i class = "icon ion-search placeholder-icon" ></i>
+      <input type="search" ng-model = "busqueda" placeholder ="Buscar">
+    </label>
+  </div> -->
+  <ion-toolbar>
+   <div>
+     <ion-searchbar animated placeholder="Buscar" (ionChange) = "buscar($event)"></ion-searchbar>
+   </div>
+  </ion-toolbar>
+    <ion-card *ngFor ="let servi of servicios">
+      <img src= "../../assets/productos/{{servi.url}}.jpg" alt="">
+      <ion-card-content>
+       <ion-card-header>
+         <ion-card-subtitle >{{servi.servicio}}</ion-card-subtitle>
+         <!--<ion-card-title>{{servi.titulo}}</ion-card-title> -->
+       </ion-card-header>
+     </ion-card-content>
+      <ion-button expand = "full" color = "tertiary" [routerLink] = "['/detalles', servi.cod]">
+        <ion-icon slot="end" name = "arrow-forward"> </ion-icon>
+        </ion-button>
+    </ion-card>
+  
+    <ion-router-outlet id = "principal"></ion-router-outlet>
+</ion-content> 
+
+

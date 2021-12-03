@@ -1,0 +1,16 @@
+.center-span {
+  display: block;
+  text-align: center;
+}
+
+ion-content, ion-toolbar, ion-item, ion-card-title {
+  --background:rgb(0, 0, 0);
+  --color: white;
+  }
+
+  
+  
+  ion-list{
+    padding-bottom: 0;
+    padding-top: 0;
+  }

@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button text ="Regresar" defaultRef="/">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+  <div class="ae-container-fluid animated fadeInDown">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="../../../assets/productos/{{id}}/pic-1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="../../../assets/productos/{{id}}/pic-2.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="../../../assets/productos/{{id}}/pic-3.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+  </div>
+  <hr>
+      <hr>
+      <div class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
+          <div class="ae-grid ae-grid--collapse">
+              <div class="ae-grid__item item-lg-6"><img src="../../../assets/productos/{{id}}/main.jpg" alt="Urku Portfolio" ></div>
+              <div class="ae-grid__item item-lg-5 item-lg--offset-1 au-lg-ptp-1">
+                  <h4 class="ae-u-bolder"> </h4>
+                  <p align="justify"> </p>
+              </div>
+          </div>
+      <hr>
+
+      </div>
+      <ion-card-content>
+        <ion-card-title style="font-size:14px" >Con Spotify, es muy fácil encontrar la música o el podcast perfecto para cada momento desde tu teléfono, tu computadora, tu tablet y muchos otros dispositivos. En Spotify, tenemos millones de canciones y episodios para todos los estilos. </ion-card-title>
+        <ion-card-title style="font-size:25px" >Costo: Gs25.000 </ion-card-title>
+      </ion-card-content>
+
+      <ion-button expand = "block"  color = "tertiary" >Solicitar</ion-button>
+
+  </div>
+</ion-content>
