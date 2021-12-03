@@ -8,13 +8,13 @@ $ npm install
 ## Running the app
 ```bash
 # development laboratory
-ionic serve -l 
+$ ionic serve -l 
 
 #upload in localhost:8082
 
 
 # development run in server web
-ionic serve 
+$ ionic serve 
 
 #upload in localhost:8081
 
